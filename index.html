@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festejando a Conexão entre Campo e Cidade</title>
+
+  <!-- Fonte acessível e contrastes -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #014421;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    nav a:focus, nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin-top: 30px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1, h2 {
+      color: #014421;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea, button {
+      font-size: 1rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #014421;
+    }
+
+    button {
+      background-color: #014421;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover, button:focus {
+      background-color: #012f17;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 10px;
+      background-color: #014421;
+      color: white;
+    }
+  </style>
+
+  <!-- VLibras: Tradução em Libras -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<body>
+
+  <!-- VLibras Plugin -->
+  <div vw class="enabled">
+    <div vw-access-button class="active" aria-label="Ativar tradução em Libras"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <header>
+    <h1>🌾 Campo & Cidade 🤝</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre a Conexão</h2>
+      <p>
+        Esta celebração destaca a união entre o mundo rural e o urbano, promovendo trocas culturais, sustentabilidade e respeito mútuo.
+        <span class="sr-only">Descrição em áudio: Encontro entre pessoas do campo e da cidade em harmonia, com música, produtos locais e sorrisos compartilhados.</span>
+      </p>
+    </section>
+
+    <section id="eventos">
+      <h2>Eventos em Destaque</h2>
+      <ul>
+        <li>🌽 Feira de Produtos Orgânicos</li>
+        <li>🚜 Exposição de Máquinas Sustentáveis</li>
+        <li>🎶 Festival Cultural com Música Regional e Urbana</li>
+      </ul>
+    </section>
+
+    <section id="imagem" aria-label="Imagem ilustrativa da conexão entre campo e cidade">
+      <img src="https://via.placeholder.com/600x300?text=Campo+e+Cidade" alt="Ilustração de pessoas do campo e da cidade celebrando juntas." />
+    </section>
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Conexão Campo & Cidade. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
